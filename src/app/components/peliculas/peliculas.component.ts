@@ -11,6 +11,7 @@ export class PeliculasComponent implements OnInit, DoCheck, OnDestroy {
   public titulo: string;
   public peliculas: Pelicula[];
   public favorita!: Pelicula;
+  public fecha: any;
 
   constructor() {
     this.titulo = "Componente Peliculas";
@@ -20,6 +21,7 @@ export class PeliculasComponent implements OnInit, DoCheck, OnDestroy {
       new Pelicula("Batman vs Superman", 2015, "https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/peliculas/batman-v-superman-el-amanecer-de-la-justicia/batman-v.-superman-el-amanecer-de-la-justicia-nuevo-trailer/86629613-1-esl-ES/Batman-v.-Superman-El-Amanecer-de-la-Justicia-Nuevo-trailer.jpg?crop=1xw:0.9221902017291066xh;center,top&resize=480:*" )
       
     ];
+    this.fecha = new Date(2020, 8, 12);
    }
 
   ngOnInit(): void {
