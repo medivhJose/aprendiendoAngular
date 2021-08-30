@@ -23,6 +23,8 @@ app.use((req, res, next) => {
     next();
 });
 
+
+
 // Añadir prefijos a rutas / Cargar rutas
 app.use('/api', article_routes);
 
